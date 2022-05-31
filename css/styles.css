@@ -23,6 +23,10 @@ body {
 /* Лого */
 
 .logo {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
     font-weight: 700;
@@ -44,7 +48,45 @@ body {
 
 /* Хедер */
 
+.header {
+    display: flex;
+    width: 1600px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 215px;
+    padding-right: 215px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list,
+.header-contact {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list {
+    margin-left: 93px;
+}
+
+.nav-list .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header-contact .item:not(:last-child) {
+    margin-right: 50px;
+}
+
 .nav-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--text-heading-color);
     text-decoration: none;
 
@@ -60,7 +102,15 @@ body {
     color: var(--main-active-color);
 }
 
+.header-contact {
+    margin-left: auto;
+}
+
 .nav-contact {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--main-text-color);
     text-decoration: none;
 
