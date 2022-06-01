@@ -235,7 +235,7 @@ body {
     background-color: var(--main-active-color);
     color: var(--dark-bg-text);
 
-    border: 2px solid transparent;
+    border: 0;
     border-radius: 4px;
 
     cursor: pointer;
@@ -367,12 +367,36 @@ body {
 
 /* Портфолио */
 
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 /* Меню фильтров */
+
+.filter-list {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding: 0;
+}
+
+.filter-list .item:not(:last-child) {
+    margin-right: 8px;
+}
 
 .filter-button {
     background-color: var(--secondary-bg-color);
     color: var(--text-heading-color);
     cursor: pointer;
+
+    min-width: 128px;
+    min-height: 38px;
+    border: 0;
+    border-radius: 4px;
+
 
     font-family: inherit;
     font-weight: 500;
@@ -388,7 +412,34 @@ body {
 }
 
 /* Проекты */
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.project-list .item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #EEEEEE;
+    width: calc((100% - 60px) / 3);
+}
+
+.project-list .item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.project-list .item:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+}
+
 .project-title {
+    margin-top: 20px;
+    margin-bottom: 4px;
+    margin-left: 24px;
+    margin-right: 24px;
+
     color: var(--text-heading-color);
 
     font-size: 18px;
@@ -397,6 +448,11 @@ body {
 }
 
 .project-filter {
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-left: 24px;
+    margin-right: 24px;
+
     font-size: 16px;
     line-height: 1.88;
 }
