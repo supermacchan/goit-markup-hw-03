@@ -204,6 +204,11 @@ body {
     text-align: center;
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 /* Hero-Баннер */
 .hero {
     padding-top: 200px;
@@ -254,10 +259,6 @@ body {
 }
 
 /* Особенности */
-.features {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 .visually-hidden {
     position: absolute;
@@ -308,7 +309,7 @@ body {
 /* Чем мы занимаемся */
 
 .activities {
-    padding-bottom: 94px;
+    padding-top: 0;
 }
 
 .activities-list {
@@ -324,8 +325,6 @@ body {
 /* Команда */
 
 .team {
-    padding-bottom: 94px;
-
     background-color: var(--secondary-bg-color);
 }
 
@@ -366,11 +365,6 @@ body {
 }
 
 /* Портфолио */
-
-.portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 /* Меню фильтров */
 
@@ -422,8 +416,15 @@ body {
 .project-list .item {
     margin-right: 30px;
     margin-bottom: 30px;
-    border: 1px solid #EEEEEE;
     width: calc((100% - 60px) / 3);
+}
+
+.item-description {
+    border: 1px solid #EEEEEE;
+}
+
+.project-image {
+    display: block;
 }
 
 .project-list .item:nth-child(3n) {
