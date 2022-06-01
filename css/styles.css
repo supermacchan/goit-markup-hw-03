@@ -27,9 +27,6 @@ body {
 /* Лого */
 
 .logo {
-    display: block;
-    padding-top: 24px;
-    padding-bottom: 25px;
 
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
@@ -51,6 +48,12 @@ body {
 }
 
 /* Хедер */
+
+.top-logo {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
 
 .header {
     border-bottom: 1px solid #ECECEC;
@@ -139,10 +142,25 @@ body {
 /* Футер */
 
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
     background-color: var(--dark-bg-color);
 }
 
+.bottom-logo {
+    margin-bottom: 20px;
+}
+
+.footer-list {
+    margin: 0;
+    padding: 0;
+}
+
 .address-text {
+    margin-top: 0;
+    margin-bottom: 0;
+
     color: var(--dark-bg-text);
 
     font-style: normal;
@@ -165,6 +183,10 @@ body {
     color: var(--main-active-color);
 }
 
+.footer-list .features-list .item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
 /* Main */
 
 .list {
@@ -172,6 +194,9 @@ body {
 }
 
 .title {
+    margin-top: 0;
+    margin-bottom: 50px;
+
     color: var(--text-heading-color);
     
     font-size: 36px;
@@ -183,6 +208,7 @@ body {
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
+
     background-color: var(--dark-bg-color);
     text-align: center;
 }
@@ -279,16 +305,50 @@ body {
     line-height: 1.71;
 }
 
-/* Чем мы занимаемся - оформлено с помощью классов title и list, раздел Main этого css-документа*/
+/* Чем мы занимаемся */
+
+.activities {
+    padding-bottom: 94px;
+}
+
+.activities-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.activities-list .item:not(:last-child) {
+    margin-right: 30px;
+}
 
 /* Команда */
 
 .team {
+    padding-bottom: 94px;
+
     background-color: var(--secondary-bg-color);
+}
+
+.team-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.team-list .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.team-list .item {
+    width: 270px;
+
+    background-color: var(--main-bg-color);
 }
 
 .member-name {
     color: var(--text-heading-color);
+    margin-top: 30px;
+    margin-bottom: 10px;
 
     font-weight: 500;
     font-size: 16px;
@@ -297,6 +357,9 @@ body {
 }
 
 .job-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+
     font-size: 16px;
     line-height: 1.19;    
     text-align: center;
