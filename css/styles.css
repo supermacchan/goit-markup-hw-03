@@ -12,7 +12,6 @@
 /* Глобальные стили */
 
 body {
-    width: 1600px;
     margin-left: auto;
     margin-right: auto;
 
@@ -148,12 +147,9 @@ body {
     background-color: var(--dark-bg-color);
 }
 
-.bottom-logo {
-    margin-bottom: 20px;
-}
-
 .footer-list {
-    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 0;
     padding: 0;
 }
 
@@ -183,7 +179,7 @@ body {
     color: var(--main-active-color);
 }
 
-.footer-list .features-list .item:not(:last-child) {
+.footer-list .item:not(:last-child) {
     margin-bottom: 9px;
 }
 
@@ -234,8 +230,10 @@ body {
 .hero-button {
     margin-top: 30px;
     min-width: 200px;
-    min-height: 50px;
-    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
 
     background-color: var(--main-active-color);
     color: var(--dark-bg-text);
@@ -280,7 +278,7 @@ body {
 }
 
 .features-list .item {
-    width: 270px;
+    width: calc((100% - 120px) / 4);
 }
 
 .features-list .item:not(:last-child) {
@@ -322,6 +320,15 @@ body {
     margin-right: 30px;
 }
 
+.activities-list .item {
+    width: calc((100% - 60px) / 3);
+}
+
+.activities-image {
+    display: block;
+    max-width: 100%;
+}
+
 /* Команда */
 
 .team {
@@ -339,14 +346,19 @@ body {
 }
 
 .team-list .item {
-    width: 270px;
+    width: calc((100% - 120px) / 4);
 
     background-color: var(--main-bg-color);
 }
 
+.about-member {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .member-name {
     color: var(--text-heading-color);
-    margin-top: 30px;
+    margin-top: 0;
     margin-bottom: 10px;
 
     font-weight: 500;
@@ -357,11 +369,16 @@ body {
 
 .job-title {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 0;
 
     font-size: 16px;
     line-height: 1.19;    
     text-align: center;
+}
+
+.member-photo {
+    display: block;
+    max-width: 100%;
 }
 
 /* Портфолио */
@@ -386,8 +403,11 @@ body {
     color: var(--text-heading-color);
     cursor: pointer;
 
-    min-width: 128px;
-    min-height: 38px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+
     border: 0;
     border-radius: 4px;
 
@@ -420,11 +440,19 @@ body {
 }
 
 .item-description {
-    border: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .project-image {
     display: block;
+    max-width: 100%;
 }
 
 .project-list .item:nth-child(3n) {
@@ -436,10 +464,8 @@ body {
 }
 
 .project-title {
-    margin-top: 20px;
+    margin-top: 0;
     margin-bottom: 4px;
-    margin-left: 24px;
-    margin-right: 24px;
 
     color: var(--text-heading-color);
 
@@ -450,9 +476,7 @@ body {
 
 .project-filter {
     margin-top: 0;
-    margin-bottom: 20px;
-    margin-left: 24px;
-    margin-right: 24px;
+    margin-bottom: 0;
 
     font-size: 16px;
     line-height: 1.88;
